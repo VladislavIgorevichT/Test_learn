@@ -13,9 +13,10 @@ int main()
     step = 20;   /* шаг */
     
     fahr = lower;
+    printf("%s\n", "Celsius Fahrenheit");
     while (fahr <= upper) {
         celsius = (5.0 / 9.0) * (fahr - 32);
-        printf("%3.0f %7.2f\n", fahr, celsius);
+        printf("%7.2f %7.0f\n", celsius, fahr);
         fahr = fahr + step;
     }
 }
